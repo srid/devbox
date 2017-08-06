@@ -16,13 +16,12 @@
     wget
     
     (with haskellPackages; (ghcWithHoogle (haskellPackages: [ 
-      stack
-      hlint
-      stylish-haskell
-      hasktags
       ghc-mod
+      hasktags
+      hlint
       intero
-
+      stack
+      stylish-haskell
       wai-app-static
     ])))
   ];
