@@ -14,7 +14,17 @@
     unzip
     vim
     wget
-    
+
+    (emacsWithPackages (with emacsPackagesNg; [
+      evil
+      haskell-mode
+      intero
+      magit
+      nix-mode
+      org
+      python-mode
+    ]))    
+        
     (with haskellPackages; (ghcWithHoogle (haskellPackages: [ 
       ghc-mod
       hasktags
@@ -25,15 +35,4 @@
       wai-app-static
     ])))
   ];
-
-  services.emacs.enable = true;
-  services.emacs.package = with pkgs; 
-  (emacsWithPackages (with emacsPackagesNg; [
-      evil
-      haskell-mode
-      intero
-      nix-mode
-      org
-      python-mode
-  ]));
 }
