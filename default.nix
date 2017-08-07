@@ -28,11 +28,16 @@
       ivy
       ivy-hydra
       leuven-theme
+      lispy
       magit
+      material-theme
+      moe-theme
       nix-mode
       org
       python-mode
       swiper
+      worf
+      zenburn-theme
     ]))    
         
     (with haskellPackages; (ghcWithHoogle (haskellPackages: [ 
