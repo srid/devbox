@@ -1,6 +1,8 @@
 { config, pkgs, ...}:
 
 {
+  programs.mosh.enable = true;
+
   environment.systemPackages = with pkgs; [
     bash
     cabal2nix
@@ -16,13 +18,20 @@
     wget
 
     (emacsWithPackages (with emacsPackagesNg; [
+      ace-window
+      avy
       evil
+      github-theme
       haskell-mode
       intero
+      ivy
+      ivy-hydra
+      leuven-theme
       magit
       nix-mode
       org
       python-mode
+      swiper
     ]))    
         
     (with haskellPackages; (ghcWithHoogle (haskellPackages: [ 
