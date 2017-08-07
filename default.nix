@@ -35,8 +35,10 @@
     ]))    
         
     (with haskellPackages; (ghcWithHoogle (haskellPackages: [ 
+      # apply-refact --> https://github.com/NixOS/nixpkgs/issues/26895
       ghc-mod
       hasktags
+      hindent
       hlint
       intero
       stack
