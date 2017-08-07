@@ -11,6 +11,7 @@
     htop
     pandoc
     python3
+    ripgrep
     tig
     tmux
     unzip
