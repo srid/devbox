@@ -10,8 +10,11 @@
     git
     htop
     pandoc
-    python3
+    php
+    python36Packages.ipython
     ripgrep
+    rustStable.rustc
+    rustStable.cargo
     tig
     tmux
     unzip
