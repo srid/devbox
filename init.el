@@ -10,6 +10,7 @@
 ;; UI
 (menu-bar-mode -1)
 (load-theme 'github)
+(xterm-mouse-mode)
 
 ;; ivy => http://oremacs.com/swiper/#getting-started
 (ivy-mode 1)
