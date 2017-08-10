@@ -8,6 +8,7 @@
     cabal2nix
     fish
     git
+    gnumake
     htop
     pandoc
     php
@@ -33,6 +34,7 @@
       leuven-theme
       lispy
       magit
+      markdown-mode
       material-theme
       moe-theme
       nix-mode
