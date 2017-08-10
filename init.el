@@ -17,9 +17,10 @@
 (setq ivy-use-virtual-buffers t)
 (setq ivy-count-format "(%d/%d) ")
 (global-set-key "\C-s" 'swiper)
+(global-set-key (kbd "M-p i") 'ivy-switch-buffer)
 
 ;; ace-window
-(global-set-key (kbd "M-p") 'ace-window)
+(global-set-key (kbd "M-p w") 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 ;; avy
