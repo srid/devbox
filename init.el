@@ -17,7 +17,6 @@
 (setq ivy-use-virtual-buffers t)
 (setq ivy-count-format "(%d/%d) ")
 (global-set-key "\C-s" 'swiper)
-(global-set-key (kbd "M-p i") 'ivy-switch-buffer)
 
 ;; ace-window
 (global-set-key (kbd "M-p w") 'ace-window)
@@ -30,6 +29,11 @@
 (global-set-key (kbd "M-g s") 'magit-status)
 
 ;; Haskell
+;; (add-hook 'haskell-mode-hook #'hindent-mode)
+(add-hook 'haskell-mode-hook 'structured-haskell-mode)
+(require 'shm)
+(set-face-background 'shm-current-face "#eee8d5")
+(set-face-background 'shm-quarantine-face "lemonchiffon")
 (custom-set-variables
  '(haskell-stylish-on-save t))
 
