@@ -10,7 +10,7 @@ if [ "$TERM" != "linux" ]; then
 fi
 
 # exa https://github.com/ogham/exa
-alias l=exa
+alias l="exa -l"
 
 # Automatically added by the Platform.sh CLI installer
 export PATH="/Users/srid/.platformsh/bin:$PATH"
